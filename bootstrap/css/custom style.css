@@ -1,0 +1,12 @@
+
+header{
+    background-image: url("../images/myimage.jpg");
+    background-size: 100%;
+    height: 900px;
+}
+.stack{
+    height: 100%;
+}
+#advantage{
+    background-color:rgb(6, 165, 99);
+}
