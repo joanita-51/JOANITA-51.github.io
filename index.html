@@ -9,51 +9,62 @@
     <title>welcome</title>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                    <figure class="navbar-brand-container">
-                        <a class="navbar-brand" href="#">
-                            <img src="bootstrap/media/images/logo.svg" alt="My logo">
-                        </a>
-                    </figure> 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">  
-                         
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#home">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link"href="#Advantage">Advantage</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#work">Work</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#testimonials">Testimonials</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contactForm">Contact Form</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contactInfo">Contact information</a>
-                                </li>
-                        </ul>
-                    </div>    
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                         </button>
-                </div>     
-        </nav>
-    <header id="home" style="background-image: url(bootstrap/media/images/myimage.jpg); background-repeat: no-repeat;">
-      <style>
-  
-      </style>
-     <img src="" alt="">
-     <h2>NAKITYO JOANITA</h2>
-     <p>"Web designer and web developer"</p>
+  <!--header section-->
+  <section id="header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <img src="bootstrap/media/images/logo.svg" width="163px" height="100px"class="navbar-brand" alt="My logo"/>
+          
+          <button class="navbar-toggler" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
 
-    </header>
-    <section id="Advantage" style="background-color: rgb(72, 197, 139);">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto ">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#top">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"href="#Advantage">Advantage</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contactForm">Contact Form</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contactInfo">Contact information</a>
+              </li>
+      </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!--header section end-->
+
+  <!--main section-->
+  <section class="main bg-image"style="background-image: url(bootstrap/media/images/myimage.jpg); 
+  height:100vh;background-size:cover; background-repeat:no-repeat; display:block;background-position: center center; ">>
+    
+      <div id="row">
+            <h2>NAKITYO JOANITA</h2>
+          <p>"Web developer"</p>
+        
+      </div>
+    
+  </section>
+      
+    
+    <section id="Advantage" style="background-color: rgb(100, 223, 165);">
         <h3>Why choose me</h3>
         <p>Solving Problems in communities is most important to me because it  makes communities better 
             places to live. My name is Nakityo Joanita, a student at Makerere University pursuing a bachelor’s
