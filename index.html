@@ -12,7 +12,7 @@
   <!--header section-->
   <section id="header">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark " id="mainNav">
         <div class="container">
           <img src="bootstrap/media/images/logo.svg" width="163px" height="100px"class="navbar-brand" alt="My logo"/>
           
@@ -54,69 +54,99 @@
   <!--main section-->
   <section class="main bg-image"style="background-image: url(bootstrap/media/images/myimage.jpg); 
   height:100vh;background-size:cover; background-repeat:no-repeat; display:block;background-position: center center; ">>
+  <i class="bi bi-envelope"></i>
     
       <div id="row">
             <h2>NAKITYO JOANITA</h2>
           <p>"Web developer"</p>
         
       </div>
-    
+      <a href="mailto:nakityojoanita51@gmail.com">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" fill="white" style="background-color: rgb(8, 126, 223);" class="bi bi-envelope" viewBox="0 0 16 16">
+
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+      </svg>
+    </a>
   </section>
-      
-    
+    <!--end of main section-->  
+
+    <!--Advantage page-->
     <section id="Advantage" style="background-color: rgb(100, 223, 165);">
-        <h3>Why choose me</h3>
-        <p>Solving Problems in communities is most important to me because it  makes communities better 
-            places to live. My name is Nakityo Joanita, a student at Makerere University pursuing a bachelor’s
-             degree in Software  Engineering. Looking for opportunities that can help me pursue a career in data analysis.
-        </p>
-        <h3>Familiarity</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-        </ul>
-        <button >
-         <a href="https://docs.google.com/document/d/1jfCxBlwMkfgv63rE7C3JrmH9XxlE22eRDMB0Jm0NUEg/edit?ts=6087acd7#"> More about me</a>
-        </button>
-        <button>
-            <a href="https://www.figma.com/file/pM0Re0QMSgto8vbD2ou9yi/profile?node-id=0%3A1 ">figma</a>
-        </button>
-
-
-    </section>
-    <section id="work"class="p-3 mb-2 bg-secondary text-white">
-      <div class="stack">
-        <img src="bootstrap/media/images/mentorship.JPG" alt="club pic" width="314px" height="194px">
-        I have designed a responsive school club website using HTML, CSS an Javascript
-        <p>Please check out my work for more of what i have designed using HTML, CSS and JavaScript on the github account below;</p>
-        <button>
-            <a href="https://github.com/JOANITA-51"class="rounded float-end">Github</a>
-        </button>
-
-      </div>
-      <div  class="stack">
-          
-        <img src="bootstrap/media/images/facebook.jpg"class="rounded float-end" alt="Recycle mama pic" width="247" height="263">
-        <p> <b>Nov 2019   Recycle Mamas </b> 
-            I participated in a Hackathon organised by  Women In Technology  Uganda (WITU). My group is working on a project whose goal is to 
-            address the sanitation in Kampala. This was an eye opener on how  to solve the problems in the society and the procedures involved in starting up  a business.
+      <div class="container">
+        <div class="row ">
+          <div class="col-sm">
+            <h3>Why choose me</h3>
+            <p>Solving Problems in communities is most important to me because it  makes communities better 
+                places to live. My name is Nakityo Joanita, a student at Makerere University pursuing a bachelor’s
+                 degree in Software  Engineering. Looking for opportunities that can help me pursue a career in data analysis.
             </p>
+          </div>
+          <div class="col-sm">
+            <h3>Familiarity</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto"  >
+              <button class="btn btn-light" type="button">
+                    <a href="https://docs.google.com/document/d/1jfCxBlwMkfgv63rE7C3JrmH9XxlE22eRDMB0Jm0NUEg/edit?ts=6087acd7#" id="doc"> More about me</a>                
+              </button>
+      </div>     
+    </section>
+    <!--end of advantage page-->
+
+    <section >
+      <div class="container">
+        <h3>Mentorship Club</h3>
+        <button type="button" id="mentorship">
+          <a href="http://mentorship-1.herokuapp.com/" id="club"> mentorship club</a>
+        </button>
+        <div class="row" >
+                   <p> I designed a responsive school club website using HTML, CSS an Javascript</p>
+                    <img src="bootstrap/media/images/mentorship.JPG" alt="club pic" width="109" height="348">
+          
+          
+        </div>
+        <div class="row">
+          <h3>Nov 2019   Recycle Mamas</h3>
+               <p> I participated in a Hackathon organised by  Women In Technology  Uganda (WITU). My group is working on a project whose goal is to 
+            address the sanitation in Kampala. This was an eye opener on how  to solve the problems in the society and the procedures involved in starting up  a business.</p>
+            <img src="bootstrap/media/images/facebook.jpg" alt="Recycle mama pic" width="311" height="351" >
+       </div>
+         
+        <div class="row">
+          <h3>Sept 2020   Paymate</h3>
+          <p> I participated in a Hackathon called Women In  Fintech Uganda organised by HiPipo in collaboration with Mojaloop , 
+              Level One Project and Include Everyone where we were bringing together business and finance and my  group is working on a project called Paymate. 
+              This opened my mind on various  software such as mojaloop, Postman, Creately, and Justinmind.</p>
+          <img src="bootstrap/media/images/fintech.png"class="rounded float-start" alt="fintech pic"width="360" height="470" >
+               
+        </div>
+      </div>
+      
+
+      <div class="mx-auto" style="width: 200px;">
+        <h5>Please check more:</h5>
+        
+          <div class="d-flex justify-content-between" >
+            <button type="button" class="col" id="github">
+              <a href="https://github.com/JOANITA-51" id="G">Github</a>
+          </button>
+          <button type="button" class="col" id="figma">
+            <a href="https://www.figma.com/file/pM0Re0QMSgto8vbD2ou9yi/profile?node-id=0%3A1 " id="f">figma</a>
+          </button>
+          </div>
+          
+     
 
       </div>
-       
-      <div  class="stack">
-        <img src="bootstrap/media/images/fintech.png"class="rounded float-start" alt="fintech pic" width="348px" height="210px">
-        <p>
-            <b>Sept 2020   Paymate</b>
-            I participated in a Hackathon called Women In  Fintech Uganda organised by HiPipo in collaboration with Mojaloop , 
-            Level One Project and Include Everyone where we were bringing together business and finance and my  group is working on a project called Paymate. 
-            This opened my mind on various  software such as mojaloop, Postman, Creately, and Justinmind.
-            
-        </p>
-      </div>
-
+      
 
     </section>
     <section id="testimonials">
