@@ -33,6 +33,10 @@
     border-radius: 5px;
     transition: all 0.6s ease 0s;
 }
+.advantage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 /*.main{
     position: relative;
@@ -79,6 +83,7 @@ svg{
 #mentorship{
     border-radius: 5px;
     background-color: rgb(100, 223, 165);
+    margin-left: 5px;
 }
 #club,#f,#G{
     text-decoration: none;
@@ -91,6 +96,7 @@ svg{
 #mentorship:hover{
     background-color: rgb(105, 152, 240);
     transition: all 0.6s ease 0s;
+    
 }
 #figma:hover{
     background-color: rgb(105, 152, 240);
