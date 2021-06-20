@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/custom style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
     <title>welcome</title>
+    <style>
+      .banner-image{
+        background-image: url('bootstrap/media/images/myimage.jpg');
+        background-size: cover;
+        background-position: center center;
+      }
+    </style>
+   
 </head>
 <body>
   <!--header section-->
-  <section id="header">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark " id="mainNav">
-        <div class="container">
-          <img src="bootstrap/media/images/logo.svg" width="163px" height="100px"class="navbar-brand" alt="My logo"/>
-          
-          <button class="navbar-toggler" type="button" 
-          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-          aria-controls="navbarSupportedContent" aria-expanded="false" 
-          aria-label="Toggle navigation">
+  
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pd-md-3">
+      <div class="container">
+        <a href="#" class="navbar-brand"><img src="bootstrap/media/images/logo.svg" width="163px" height="100px" alt="My logo"/></a>
+        <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-target="#navbarNav"
+        data-bs-toggle="collapse"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle Navbar"
+        >  
           <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto ">
-              <li class="nav-item active">
-                  <a class="nav-link" href="#top">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link"href="#Advantage">Advantage</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#work">Work</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#testimonials">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#contactForm">Contact Form</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#contactInfo">Contact information</a>
-              </li>
-      </ul>
-          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#top" class="nav-link text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Advantage" class="nav-link text-white">Advantage</a>
+            </li>
+            <li class="nav-item">
+              <a href="#work" class="nav-link text-white">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link text-white">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contactForm" class="nav-link text-white">contactForm</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contactInfo" class="nav-link text-white">contactInfo</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
-  </section>
-  <!--header section end-->
-
-  <!--main section-->
-  <section class="main bg-image"style="background-image: url(bootstrap/media/images/myimage.jpg); 
-  height:100vh;background-size:cover; background-repeat:no-repeat; display:block;background-position: center center; ">>
-  <i class="bi bi-envelope"></i>
+      </div>
+    </nav>
+  
+    <!-- Banner image -->
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+      <i class="bi bi-envelope"></i>
     
-      <div id="row">
+      <div id="row" class="text-white">
             <h2>NAKITYO JOANITA</h2>
           <p>"Web developer"</p>
         
@@ -67,9 +82,11 @@
         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
       </svg>
     </a>
-  </section>
-    <!--end of main section-->  
-
+      </div>
+    </div>
+  </header>
+  
+ 
     <!--Advantage page-->
     <section id="Advantage" style="background-color: rgb(100, 223, 165);">
       <div class="container">
@@ -101,7 +118,19 @@
     </section>
     <!--end of advantage page-->
 
-    <section >
+    <!--Work page-->
+    <section class="text-white" id="work" style="background-color: rgb(78, 76, 76);">
+      
+		
+<!--	<div class="row" style="border:none; background:white; height:210px;">
+		<div class="col-xs-6">
+			<img src="bootstrap/media/images/mentorship.JPG" style="height:200px; margin-right:-15px;" />
+		</div>
+		<div class="col-xs-6">  
+			<h3>Mentorship Club</h3>
+			<p style="font-size:10px; color:#03225C;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa.</p>
+		</div>
+	</div>-->
       <div class="container">
         <h3>Mentorship Club</h3>
         <button type="button" id="mentorship">
@@ -109,7 +138,7 @@
         </button>
         <div class="row" >
                    <p> I designed a responsive school club website using HTML, CSS an Javascript</p>
-                    <img src="bootstrap/media/images/mentorship.JPG" alt="club pic" width="109" height="348">
+                    <img src="bootstrap/media/images/mentorship.JPG" class="img-thumbnail float-end" alt="club pic">
           
           
         </div>
@@ -143,131 +172,232 @@
           </button>
           </div>
           
-     
+         </div>
+      </section>
+     <!--end of work page--> 
 
-      </div>
-      
-
-    </section>
-    <section id="testimonials">
-      
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+     <!--Testimonials page-->
+     <section id="testimonials">
+      <div class="gtco-testimonials">
+        <h2>What people say</h2>
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/Desire.jpg" alt="-classmate">
+              <div class="card-body">
+                <h5>Desire Awori <br />
+                  <span> -classmate | software engineer </span>
+                </h5>
+                <p class="card-text">“ Joanita is an IT genius. I have watched her work on numerous projects which all turn out really 
+                  well because of the time and effort she puts in. When she is really into a particular IT related project,
+                   she literally works day and night to make it a success. Being in the same class with her has made me draw
+                    motivation from her in the field of IT and I can strongly say Anita is the best. ” </p>
+              </div>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="bootstrap/media/images/Desire.jpg" class="d-block w-100" alt="testimonial">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                  <p>Joanita is an IT genius. I have watched her work on numerous projects which all turn out really 
-                      well because of the time and effort she puts in. When she is really into a particular IT related project,
-                       she literally works day and night to make it a success. Being in the same class with her has made me draw
-                        motivation from her in the field of IT and I can strongly say Anita is the best.</p>
-                </div>
-              </div>
-              <div class="carousel-item ">
-                <!--<img src="---" class="d-block w-100" alt="testimonial">-->
-                <div class="carousel-caption d-none d-md-block">
-                 
-                  <p>I met Miss Nakityo Joanita a few months ago at Ablestate Creatives Ltd.
-                       Joanita is among the six out of 30 applicants who were awarded a scholarship in software development skills at Ablestate. 
-                       I am her coach. I have found her to be committed, vibrant, punctual, and a person with a positive attitude. 
-                      I would highly commend her for any opportunity.</p>
-                      <h5>Teacher | Software Developer</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="bootstrap/media/images/kalenda.png" class="d-block w-100" alt="testimonial">
-                <div class="carousel-caption d-none d-md-block">
-                 
-                  <p>
-                   Joanita is hardworking, teamwork-oriented, friendly and yet a multi-tasker.
-                    We worked together during a hackathon where we were tasked to find a problem and find solutions to it.
-                    I realized that Joanita is so creative and has passion for software development most especially finding solutions to prevailing problems.
-                     I personally sometimes get motivation from her.
-                    I greatly believe that once added to your team, she will be an asset to your organization.
-                    </p>
-                    <h5>Kalenda Racheal -Computer Science student Makerere University</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="bootstrap/media/images/joan.jpg" class="d-block w-100" alt="testimonial">
-                <div class="carousel-caption d-none d-md-block">
-                 
-                  <p>Meet Nakityo Joanita, a very disciplined, hardworking and determined lady with great IT skills. 
-                      Her great passion for solving problems in the real world has made her a 
-                      great developer. She is very social hence liked by the people she works with.</p>
-                      <h5>Joanita Anyango -classmate</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="bootstrap/media/images/pully.jpg" class="d-block w-100" alt="testimonial">
-                <div class="carousel-caption d-none d-md-block">
-                 
-                  <p>This is my friend Joanita, the first friend I made in my software engineering class that I saw I could graduate with.
-                      Even before we graduated she already had a certificate from the University of Michigan.She is the most reliable hardworking girl I know and you can trust her to get the job done.
-                      i have never seen one more in love with IT like her not only IT but software world in general desiring to use her skills to create change in it.She is amazing as an engineer but also as a friend. 
-                      I've seen her spend days seated at her desk without eating yet she didn't complain or claim to be hungry or tired. She has the best energy in the room.Her capacity and capability is to die for.
-                       She is her unique geek self .</p>
-                      <h5>Mary Priscilla Kizza -classmate</h5>
-                </div>
-              </div>
-              
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-
-
-    </section>
-
-    <section id="contactForm" class="p-3 mb-2 bg-secondary text-white">
-        <form action="#" method="post">
-            <div>
-                <label for="fullname">Name</label><br/>
-                <input type="text" name="fullname" id="fullname">
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/Mr.David W.jpg" alt="coach">
+              <div class="card-body">
+                <h5>David Wampamba<br />
+                  <span>~Teacher | Software Developer </span>
+                </h5>
+                <p class="card-text">“ I met Miss Nakityo Joanita a few months ago at Ablestate Creatives Ltd.
+                  Joanita is among the six out of 30 applicants who were awarded a scholarship in software development skills at Ablestate. 
+                  I am her coach. I have found her to be committed, vibrant, punctual, and a person with a positive attitude. 
+                 I would highly commend her for any opportunity. ” </p>
+              </div>
             </div>
-            
-            <div>
-                <label for="email">Email</label><br/>
-                    <input type="text" name="email" id="email">
-                </label>
+          </div>
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/kalenda.png" alt="Computer Scientist">
+              <div class="card-body">
+                <h5>Kalenda Racheal<br />
+                  <span>~Computer Scientist </span>
+                </h5>
+                <p class="card-text">“Joanita is hardworking, teamwork-oriented, friendly and yet a multi-tasker.
+                      We worked together during a hackathon where we were tasked to find a problem and find solutions to it.
+                      I realized that Joanita is so creative and has passion for software development most especially finding solutions to prevailing problems.
+                       I personally sometimes get motivation from her.
+                      I greatly believe that once added to your team, she will be an asset to your organization. ” </p>
+              </div>
             </div>
-
-            <div>
-                <label for="message">Message</label><br/>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/joan.jpg" alt="-classmate">
+              <div class="card-body">
+                <h5>Joanita Anyango<br />
+                  <span> ~classmate | software engineer</span>
+                </h5>
+                <p class="card-text">“ Meet Nakityo Joanita, a very disciplined, hardworking and determined lady with great IT skills. 
+                  Her great passion for solving problems in the real world has made her a 
+                  great developer. She is very social hence liked by the people she works with.” </p>
+              </div>
             </div>
+          </div>
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/pully.jpg" alt="-classmate">
+              <div class="card-body">
+                <h5>Mary Priscilla Kizza <br />
+                  <span> ~classmate | software engineer</span>
+                </h5>
+                <p class="card-text">“ This is my friend Joanita, the first friend I made in my software engineering class that I saw I could graduate with.
+                  Even before we graduated she already had a certificate from the University of Michigan.She is the most reliable hardworking girl I know and you can trust her to get the job done.
+                  i have never seen one more in love with IT like her not only IT but software world in general desiring to use her skills to create change in it.She is amazing as an engineer but also as a friend. 
+                  I've seen her spend days seated at her desk without eating yet she didn't complain or claim to be hungry or tired. She has the best energy in the room.Her capacity and capability is to die for.
+                   She is her unique geek self .” </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/Halimah B.jpg" alt="-classmate">
+              <div class="card-body">
+                <h5>Bukirwa Halimah <br />
+                  <span> ~classmate | software engineer</span>
+                </h5>
+                <p class="card-text">“ I know Nakityo Joanita to be a goal-oriented and self-driven enthusiatic developer.
+                  Her immense love for technology and her deep desire to use it not only for her benefit but also for the benefit of her community, completely sets her apart. She not only dreams but also goes ahead to do everything in her power to achieve those dreams. She does with excellence whatever she sets her mind on and finds her hands to do. She is without a doubt an achiever.
+                  ” </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    
+    <!--end of testimonials page-->
+     
+    
+<!-- Footer -->
+<section class="text-white"  style="background-color:  rgb(78, 76, 76);">
+<footer class=" text-lg-start text-white">
+  <!-- Section: Social media -->
 
-            <button class="btn p-3 mb-2 bg-dark text-white">Send</button>
-        </form>
+  <!-- Section: Social media -->
 
-    </section>
-    <footer id="contactInfo">
-        <img src="bootstrap/media/images/icn_linkedin.svg" alt="linkedin">
-        <img src="bootstrap/media/images/icn_facebook.png" alt="facebook">
-        <img src="bootstrap/media/images/icn_twitter.jpg" alt="twitter">
-        <section id="copyright-section"class="container d-flex justify-content-between pt-5 pb-5" >
-            <p>&copy; Copyright 2021</p>
-             <a href="#top"class="btn btn-info"> Top</a>  
-    </section>
-</footer>
+  <!-- Section: Links  -->
+ 
+    <div class="container  text-md-start">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-6 col-xl-3 mx-auto mb-2">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mt-4 " id="feedback">
+            <i class="fas fa-gem me-3"></i>Feedback
+          </h6>
+          <section id="contactForm" class="p-3 mb-2 text-white">
+            <form action="#" method="post">
+                <div>
+                    <label for="fullname">Name:</label><br/>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label><br/>
+                        <input type="text" name="email" id="email">
+                    </label>
+                </div>
+    
+                <div>
+                    <label for="message">Message:</label><br/>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+    
+                <button class="btn p-3 mb-2 bg-dark text-white" id="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Grid column -->
 
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-4 md-start " id="contactInfo">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            social media
+          </h6>
+          <a href="https://twitter.com/nakityojoanita" class="text-white">
+          <img src="bootstrap/media/images/icn_twitter.svg" alt="twitter" width="131" height="131">
+          My twitter page
+        </a>
+        <a href="https://www.linkedin.com/in/nakityo-joanita"class="text-white">
+          <img src="bootstrap/media/images/icn_linkedin.svg" alt="linkedin" width="131" height="131">
+          My linkedin page
+        </a>
+        <a href="https://www.facebook.com/nakityo.anita"class="text-white">
+          <img src="bootstrap/media/images/icn_facebook.png" alt="facebook"width="131" height="131">
+          My facebook page
+        </a>
+          
+        </div>
+        <!-- Grid column -->
+       
+      <!-- Grid row -->
+    </div>
+  </footer>
+  </section>
+ 
+  <!-- Section: Links  -->
 
-    </footer>
+  <!-- Copyright -->
+  <div class="text-center p-4 fw-bold bg-light">
+    © Copyright 2021
+   
+  </div>
+  <!-- Copyright -->
+
+<!-- Footer -->
+    
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<!-- Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function(){
+        if(window.pageYOffset > 100){
+          nav.classList.add('bg-dark','shadow');
+        }else{
+          nav.classList.remove('bg-dark','shadow')
+        }
+      })
+    </script>
+    <script>
+      (function () {
+  "use strict";
+
+  var carousels = function () {
+    $(".owl-carousel1").owlCarousel({
+      loop: true,
+      center: true,
+      margin: 0,
+      responsiveClass: true,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        680: {
+          items: 2,
+          nav: false,
+          loop: false
+        },
+        1000: {
+          items: 3,
+          nav: true
+        }
+      }
+    });
+  };
+
+  (function ($) {
+    carousels();
+  })(jQuery);
+})();
+
+    </script>
 
 </body>
 </html>
+  
