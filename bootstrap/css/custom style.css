@@ -75,13 +75,15 @@ svg{
 .btn-light{
     margin-bottom: 10%;
     margin-top: 10%;
+    border-radius: 15px;
+    width: 250px;
 }
 .btn-light:hover{
     background-color: rgb(105, 152, 240);
     transition: all 0.6s ease 0s;
 }
 #mentorship{
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgb(100, 223, 165);
     margin-left: 5px;
 }
@@ -104,10 +106,10 @@ svg{
 }
 
 #github ,#figma{
-    margin-bottom: 10%;
-    margin-right: 20%;
-    border-radius: 5px;
+  
+    border-radius: 15px;
     background-color: rgb(100, 223, 165);
+    
     
 }
 footer,img{
@@ -247,4 +249,10 @@ footer,a{
     button.owl-dot {
       outline: 0;
     }
-  
+    #familiarity{
+      margin-left: 25%;
+    }
+    #more {
+      width: 20%;
+      border-radius: 15px;
+    }
