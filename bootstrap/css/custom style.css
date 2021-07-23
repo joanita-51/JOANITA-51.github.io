@@ -47,19 +47,20 @@
 #row{
     position: absolute;
     bottom: 0;
-    right: 0;
-    line-height:0.5px;
-    padding-right: 5% ;
-    padding-bottom: 20%;
+    left: 0;
+    line: height 1px;
+    padding-left: 2% ;
+    padding-bottom: 15%;
     
 }
 svg{
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     padding: 0;
     margin: 2%;
     border-radius: 10px;
+    margin-bottom: 10%;
 
 }
 
@@ -70,9 +71,10 @@ svg{
 }
 .btn-light{
     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-left: 8%;
     border-radius: 15px;
     width: 250px;
+    
 }
 .btn-light:hover{
     background-color: rgb(105, 152, 240);
@@ -245,6 +247,9 @@ footer,a{
     #more {
       width: 20%;
       border-radius: 15px;
+    }
+    #skils{
+      margin-bottom: 10%; 
     }
     .testimonials{
       margin-top: 0px;
