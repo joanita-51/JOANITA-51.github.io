@@ -5,6 +5,9 @@
     width: 100%;
     
 }
+body{
+  background-color:  rgb(217, 197, 236);;
+}
 .navbar{
     padding: 2px;
 }
@@ -179,6 +182,7 @@ footer,a{
       padding: 0 10px;
       border-radius: 20px;
       border: 0;
+      height: 800px;
     }
   
      .card .card-img-top {
@@ -187,7 +191,7 @@ footer,a{
         margin: 15px auto 0;
         box-shadow: 0 8px 20px -4px #95abbb;
         width: 100px;
-        height: 100px;
+        height: 150px;
       }
   
      .card h5 {
@@ -207,8 +211,8 @@ footer,a{
         color: #555;
         padding-bottom: 15px;
       }
-    
-  
+
+       
     .active {
       opacity: 0.5;
       transition: all 0.3s;
@@ -259,4 +263,10 @@ footer,a{
       margin-top: 0px;
       margin-bottom: 0px;
   
+    }
+    #fullname , #email , #message {
+      width: 90%;
+    }
+     i:hover{
+      color: rgb(8, 126, 223);
     }
