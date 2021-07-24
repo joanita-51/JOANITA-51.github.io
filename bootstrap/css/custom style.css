@@ -11,6 +11,9 @@ body{
 .navbar{
     padding: 2px;
 }
+#navbarNav{
+  overflow-x: hidden
+}
 
 .navbar-brand{
     font-weight: bold;
@@ -63,7 +66,7 @@ svg{
     padding: 0;
     margin: 2%;
     border-radius: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
 
 }
 
