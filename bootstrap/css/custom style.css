@@ -248,9 +248,7 @@ footer,a{
     button.owl-dot {
       outline: 0;
     }
-    #familiarity{
-      margin-left: 25%;
-    }
+   
     #more {
       width: 20%;
       border-radius: 15px;
@@ -270,7 +268,10 @@ footer,a{
     #fullname , #email , #message {
       width: 90%;
     }
-     .fa:hover{
+     .fab:hover{
+      color: rgb(8, 126, 223);
+    }
+    .fa:hover{
       color: rgb(8, 126, 223);
     }
     #work .card{
