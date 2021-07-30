@@ -184,7 +184,7 @@ footer,a{
       padding: 0 10px;
       border-radius: 20px;
       border: 0;
-      height: 800px;
+      height: 600px;
     }
   
      .card .card-img-top {
@@ -192,8 +192,7 @@ footer,a{
         border-radius: 50%;
         margin: 15px auto 0;
         box-shadow: 0 8px 20px -4px #95abbb;
-        width: 120px;
-        height: 150px;
+        
       }
   
      .card h5 {
