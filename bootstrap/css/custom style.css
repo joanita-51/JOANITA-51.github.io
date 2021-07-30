@@ -5,15 +5,14 @@
     width: 100%;
     
 }
-body{
-  background-color:  rgb(217, 197, 236);
-  
-}
+
 .navbar{
     padding: 2px;
    
 }
-
+body{
+  background-color:  rgb(217, 197, 236);;
+}
 
 
 .navbar-brand{
@@ -278,7 +277,7 @@ footer,a{
   height:95%;
     }
     #Advantage{
-      background-color: rgb(78, 76, 76)
+      background-color:  rgb(217, 197, 236);
     }
     #work{
       background-color: rgb(78, 76, 76);
@@ -286,3 +285,4 @@ footer,a{
     img{
       object-fit: cover;
     }
+   
