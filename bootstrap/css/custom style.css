@@ -11,7 +11,8 @@
    
 }
 body{
-  background-color:  rgb(217, 197, 236);;
+  background-color:  rgb(217, 197, 236);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -49,7 +50,7 @@ body{
     padding: 280px 0px 220px ;
     
 }*/
-
+/*
 #row{
     position: absolute;
     bottom: 0;
@@ -58,8 +59,8 @@ body{
     padding-left: 2% ;
     padding-bottom: 15%;
     
-}
-svg{
+} 
+ svg{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -68,7 +69,7 @@ svg{
     border-radius: 10px;
     margin-bottom: 8%;
 
-}
+} */
 
 #doc{
     text-decoration: none;
