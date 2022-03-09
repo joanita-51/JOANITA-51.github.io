@@ -51,7 +51,7 @@
               <a href="#top" class="nav-link text-white">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#Advantage" class="nav-link text-white">Advantage</a>
+              <a href="#Advantage" class="nav-link text-white">About</a>
             </li>
             <li class="nav-item">
               <a href="#work" class="nav-link text-white">Work</a>
@@ -93,37 +93,42 @@
     
     </div>
   </header>
-  
+
  
     <!--Advantage page-->
     <section id="Advantage" >
       <div class="container  py-5">
-          <h2><b>Why Choose Me</b></h2>
-            <p>Solving Problems in communities is most important to me because it  makes communities better 
+        <h2 class="text-center"><b>About Me</b></h2>
+        <img src="bootstrap/media/images/0771973013y.jpg" alt=" " width="30%" height="auto"  class="img-thumbnail rounded float-start"  >
+            <p class="pt-3">Solving Problems in communities is most important to me because it  makes communities better 
                 places to live.
             </p>
             <button class="btn btn-light mb-5" type="button" >
-              <a href="https://docs.google.com/document/d/1jfCxBlwMkfgv63rE7C3JrmH9XxlE22eRDMB0Jm0NUEg/edit?ts=6087acd7#" id="doc"  target="_blank">See my detailed profile</a>                
+              <a href="https://docs.google.com/document/d/1jfCxBlwMkfgv63rE7C3JrmH9XxlE22eRDMB0Jm0NUEg/edit?ts=6087acd7#" id="doc"  target="_blank">See my detailed profile <i class="fab fa-arrow-right"></i></a>                
             </button>
+          
                <!--Core skills-->
             <h2 class="pb-3" id="skills" ><b>My core skills</b></h2>
-            <h4>  Web development </h4>
-            <p>Skills i use when building a website </p>
-            <h6>Design software sketch</h6> <p>I use figma which helps me to present website wireframes and mockups</p>
-            <h6>Languages </h6> <p>I use HTML, CSS and JavaScript to describe the webpages interms of
+            <h4>  Web development skills</h4>
+            <h6> <span class="dot "></span> software sketch</h6> <p>I use figma to present website wireframes and mockups</p>
+            <h6> <span class="dot "></span> Languages </h6> <p>I use HTML, CSS and JavaScript to describe the webpages interms of
             structure, visual presentation like layout, colours and fonts, and interactivity respectively.</p>
-            <h6>Bootstrap framework</h6><p> This helps me create responsive, mobile-friendly websites that display
+            <p> I have also used the MERN stack which comprises of MongoDB, Express, React and Node.js. It is a Javascript Stack that is used for easier and faster deployment of full-stack web applications.</p>
+            <h6> <span class="dot "></span> Bootstrap framework</h6><p> To create responsive, mobile-friendly websites that display
             flawlessly on any device.</p>
-            <h6>Git and Github</h6> <p> Git is a version control system that enables me to keep track of all changes
+            <h6> <span class="dot "></span> Git and Github</h6> <p> Git is a version control system that enables me to keep track of all changes
             made to my code and Github is the hosting service for my git repository enabling teamwork and collaborative projects.</p>
             
-            <h4> Python </h4>
-            <p> I have basic knowledge in Python such as Python fundamentals, Object-Orented programming, Data Structures and algorithms 
+            <h4>Python Language </h4>
+            <p>I have used Pyton in data analysis to extract useful information from data and make the decision based upon the data analysis 
+              through cleaning the data and modeling it into diagrams like pie charts, histograms, bar graphs.</p>
+            <p> I have also used pyton in terms of Python fundamentals, Object-Oriented programming, Data Structures and algorithms 
               </p>
-              <button class="btn btn-light" type="button" >
+            <button class="btn btn-light" type="button" >
                 <a href="https://gist.github.com/JOANITA-51"  target="_blank">See my Github Gist</a>                
-          </button>
-        </div>
+            </button>
+          
+      </div>
     </section>
  
   <!--end of advantage page-->
@@ -133,6 +138,30 @@
     <div class="container">
       <h2 style="text-align: center ;" class="pt-5"><b>My Work</b> </h2>
       <div class="row pb-5">
+        
+        <div class="col-sm-4 pt-3">
+          <div class="card">
+             <img src="bootstrap/media/images/schotrix.jpg" class="ms-0 img-thumbnail" style="height:25%; width:95%;" />
+            <div class="card-body overflow-auto">
+              <h5 class="card-title"> Schotrix</h5>
+              <p class="card-text"> I have designed an online school booking system  using MongoDB, ExpressJS, ReactJS and NodeJS called Schotrix which is a  flexible scheduling solution allowing institutions  to book and schedule appointments. </p>
+              <a href="https://schotrix.netlify.app/" class="btn btn-secondary"  target="_blank">website</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-4 pt-3">
+          <div class="card">
+            <img src="bootstrap/media/images/alfasente.jpg" class="ms-0 img-thumbnail" style="height:30%; width:95%;"  />
+            <div class="card-body overflow-auto">
+              <h5 class="card-title"> Alfasente</h5>
+              <p class="card-text">I participated in the Women In  Fintech hackathon Uganda organised by HiPipo in collaboration with Mojaloop , 
+                Level One Project and Include Everyone where we are bringing together business and finance and our Team is working on a product called Alfasente.</p>
+                <a href="https://alfasente.com/" class="btn btn-secondary"  target="_blank">website</a>
+            </div>
+          </div>
+        </div>
+
         <div class="col-sm-4 pt-3">
           <div class="card">
             <img src="bootstrap/media/images/mentorship.JPG" class="ms-0 img-thumbnail" style="height:25%; width: 95%;" />
@@ -144,43 +173,21 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 pt-3">
-          <div class="card">
-             <img src="bootstrap/media/images/facebook.jpg" class="ms-0 img-thumbnail" style="height:25%; width:95%;" />
-            <div class="card-body overflow-auto">
-              <h5 class="card-title"> Recycle Mamas</h5>
-              <p class="card-text">I participated in a Hackathon organised by  Women In Technology  Uganda (WITU). My group is working on a project whose goal is to 
-                address the sanitation in Kampala. This was an eye opener on how  to solve the problems in the society and the procedures involved in starting up  a business.</p>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 pt-3">
-          <div class="card">
-            <img src="bootstrap/media/images/fintech.png" class="ms-0 img-thumbnail" style="height:25%; width:95%;"  />
-            <div class="card-body overflow-auto">
-              <h5 class="card-title"> Paymate</h5>
-              <p class="card-text">I participated in a Hackathon called Women In  Fintech Uganda organised by HiPipo in collaboration with Mojaloop , 
-                Level One Project and Include Everyone where we were bringing together business and finance and my  group is working on a project called Paymate. 
-                This opened my mind on various  software such as mojaloop, Postman, Creately, and Justinmind.</p>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+    
     
     <div style="text-align: center;">
-      <h5>Please check more:</h5>
-      <a href="https://www.figma.com/file/pM0Re0QMSgto8vbD2ou9yi/profile?node-id=49%3A489" id="f" target="_blank"  ></a>
-      <i class="fab fa-figma px-5 pt-2" style="font-size:58px"></i>
-       </a>
-    <a href="https://github.com/JOANITA-51" id="G"  target="_blank">
-      <i class="fab fa-github px-5 pb-5" style="font-size:58px"></i>
-      
-    </a>
+        <h5>Please check more:</h5>
+        <a href="https://www.figma.com/file/pM0Re0QMSgto8vbD2ou9yi/profile?node-id=49%3A489" id="f" target="_blank"  ></a>
+        <i class="fab fa-figma px-5 pt-2" style="font-size:58px"></i>
+        </a>
+      <a href="https://github.com/JOANITA-51" id="G"  target="_blank">
+        <i class="fab fa-github px-5 pb-5" style="font-size:58px"></i>
+        
+      </a>
  
  
-  </div>
+    </div>
   </section>
      <!--end of work page--> 
 
