@@ -1,421 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-     <link rel="stylesheet" href="bootstrap/css/custom style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>NAKITYO JOANITA</title>
-    <script src="https://kit.fontawesome.com/48c3200d20.js" crossorigin="anonymous"></script>
-    <style>
-      .banner-image{
-        background-image: url('bootstrap/media/images/hero-image.jpg');
-        background-size: cover;
-        background-position: center center;
-        
-      }
-    </style>
-   
+  <!-- SEO -->
+  <title>Joanita Nakityo — Software Engineer</title>
+  <meta name="description" content="Joanita Nakityo is a software engineer with graduate research experience in systems security, secure systems programming, and Rust. Based in South Korea, open to relocation.">
+  <link rel="canonical" href="https://joanita-51.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://joanita-51.github.io/">
+  <meta property="og:title"       content="Joanita Nakityo — Software Engineer">
+  <meta property="og:description" content="Software engineer with graduate research experience in systems security, secure systems programming, and Rust.">
+  <!-- TODO: replace with a dedicated 1200×630 social-preview image when available -->
+  <meta property="og:image"       content="https://joanita-51.github.io/assets/images/profile.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Joanita Nakityo — Software Engineer">
+  <meta name="twitter:description" content="Software engineer with graduate research experience in systems security, secure systems programming, and Rust.">
+  <meta name="twitter:image"       content="https://joanita-51.github.io/assets/images/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Font Awesome Kit (single source — replaces the old FA 4.7 CDN link) -->
+  <script src="https://kit.fontawesome.com/48c3200d20.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!--header section-->
-  
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pd-md-3">
-      <div class="container">
-        <a href="#" class="navbar-brand"><img src="bootstrap/media/images/logo.svg" width="82px" height="50px" alt="My logo"/></a>
-        <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-target="#navbarNav"
-        data-bs-toggle="collapse"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle Navbar"
-        >  
-          <span class="navbar-toggler-icon"></span>
+
+  <!-- Skip navigation -->
+  <a class="skip-nav" href="#main-content">Skip to main content</a>
+
+  <!-- ========================================================
+       HEADER / NAV
+  ======================================================== -->
+  <header class="site-header" id="top">
+    <nav class="nav-bar" aria-label="Primary navigation">
+      <div class="nav-inner">
+
+        <a href="#top" class="nav-logo" aria-label="Joanita Nakityo — home">
+          <img src="assets/images/logo.svg" width="48" height="48" alt="JN logo">
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mx-auto"></div>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#top" class="nav-link text-white">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#Advantage" class="nav-link text-white">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#work" class="nav-link text-white">Work</a>
-            </li>
-            <li class="nav-item">
-              <a href="#testimonials" class="nav-link text-white">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contactForm" class="nav-link text-white">Contact</a>
-            </li>
-            </ul>
-        </div>
+
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li><a href="#about"       class="nav-link">About</a></li>
+          <li><a href="#work"        class="nav-link">Work</a></li>
+          <li><a href="#experience"  class="nav-link">Experience</a></li>
+          <li><a href="#skills"      class="nav-link">Skills</a></li>
+          <li><a href="#credentials" class="nav-link">Credentials</a></li>
+          <li><a href="#contact"     class="nav-link">Contact</a></li>
+        </ul>
+
       </div>
     </nav>
-  
-    <!-- Banner image -->
-   
-    <div class="banner-image w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white">
-      
-      <h2 class="fs-1">Hi, I'm NAKITYO JOANITA.</h2>
-      <h5 class="fs-3">I do  web development and i have strong passion for data science<br>  </h5>
-      <div class="pt-3">
-        <a href="mailto:nakityojoanita51@gmail.com" target="_blank" class="text-decoration-none text-white">
-        
-          <button type="button" class="btn btn-primary fs-3 email ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="white"  class="bi bi-envelope" viewBox="0 0 16 16">
-              
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-            
-            </svg>
-            Email
-          </button>
-        </a>
-      </div>
-     
-  
-        </div>
-       
-    
-    </div>
   </header>
 
- 
-    <!--Advantage page-->
-    <section id="Advantage" >
-      <div class="container  py-5">
-        <h2 class="text-center"><b>About Me</b></h2>
-        <img src="bootstrap/media/images/0771973013y.jpg" alt=" " width="30%" height="auto"  class="img-thumbnail rounded float-start"  >
-            <p class="pt-3">Solving Problems in communities is most important to me because it  makes communities better 
-                places to live.
-            </p>
-            <button class="btn btn-light mb-5" type="button" >
-              <a href="https://docs.google.com/document/d/1WvvMepLl4MH__rhwPii7loFRAMUhac6Ho7lS1qiQ4e4/edit?usp=sharing" id="doc"  target="_blank">See my detailed profile <i class="fab fa-arrow-right"></i></a>                
-            </button>
-          
-               <!--Core skills-->
-            <h2 class="pb-3" id="skills" ><b>My core skills</b></h2>
-            <h4>  Web development skills</h4>
-            <h6> <span class="dot "></span> software sketch</h6> <p>I use figma to present website wireframes and mockups</p>
-            <h6> <span class="dot "></span> Languages </h6> <p>I use HTML, CSS and JavaScript to describe the webpages interms of
-            structure, visual presentation like layout, colours and fonts, and interactivity respectively.</p>
-            <p> I have also used the MERN stack which comprises of MongoDB, Express, React and Node.js. It is a Javascript Stack that is used for easier and faster deployment of full-stack web applications.</p>
-            <h6> <span class="dot "></span> Bootstrap framework</h6><p> To create responsive, mobile-friendly websites that display
-            flawlessly on any device.</p>
-            <h6> <span class="dot "></span> Git and Github</h6> <p> Git is a version control system that enables me to keep track of all changes
-            made to my code and Github is the hosting service for my git repository enabling teamwork and collaborative projects.</p>
-            
-            <h4>Python Language </h4>
-            <p>I have used Pyton in data analysis to extract useful information from data and make the decision based upon the data analysis 
-              through cleaning the data and modeling it into diagrams like pie charts, histograms, bar graphs.</p>
-            <p> I have also used pyton in terms of Python fundamentals, Object-Oriented programming, Data Structures and algorithms 
-              </p>
-            <button class="btn btn-light" type="button" >
-                <a href="https://gist.github.com/JOANITA-51"  target="_blank">See my Github Gist</a>                
-            </button>
-          
+  <main id="main-content">
+
+    <!-- ========================================================
+         HERO
+    ======================================================== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content container">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 id="hero-heading" class="hero-name">Joanita Nakityo</h1>
+        <p class="hero-title">Software Engineer</p>
+        <p class="hero-sub">Graduate research experience in systems security, Rust, and systems programming.<br>
+          I build secure, reliable software — from systems research to full-stack development.</p>
+        <div class="hero-actions">
+          <a href="#work"    class="btn btn-primary">View Selected Work</a>
+          <!-- TODO: replace href with the actual résumé PDF path or Google Doc export link once confirmed -->
+          <a href="https://docs.google.com/document/d/1WvvMepLl4MH__rhwPii7loFRAMUhac6Ho7lS1qiQ4e4/preview"
+             class="btn btn-outline" target="_blank" rel="noopener noreferrer">Download Résumé</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+        <p class="hero-relocation">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          Open to relocation
+        </p>
       </div>
     </section>
- 
-  <!--end of advantage page-->
 
-    <!--Work page-->
-    <section class="text-white" id="work">
-    <div class="container">
-      <h2 style="text-align: center ;" class="pt-5"><b>My Work</b> </h2>
-      <div class="row pb-5">
-        
-        <div class="col-sm-4 pt-3">
-          <div class="card">
-             <img src="bootstrap/media/images/schotrix.jpg" class="ms-0 img-thumbnail" style="height:25%; width:95%;" />
-            <div class="card-body overflow-auto">
-              <h5 class="card-title"> Schotrix</h5>
-              <p class="card-text"> I have designed an online school booking system  using MongoDB, ExpressJS, ReactJS and NodeJS called Schotrix which is a  flexible scheduling solution allowing institutions  to book and schedule appointments. </p>
-              <a href="https://schotrix.netlify.app/" class="btn btn-secondary"  target="_blank">website</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-4 pt-3">
-          <div class="card">
-            <img src="bootstrap/media/images/alfasente.jpg" class="ms-0 img-thumbnail" style="height:30%; width:95%;"  />
-            <div class="card-body overflow-auto">
-              <h5 class="card-title"> Alfasente</h5>
-              <p class="card-text">I participated in the Women In  Fintech hackathon Uganda organised by HiPipo in collaboration with Mojaloop , 
-                Level One Project and Include Everyone where we are bringing together business and finance and our Team is working on a product called Alfasente.</p>
-                <a href="https://alfasente.com/" class="btn btn-secondary"  target="_blank">website</a>
-            </div>
-          </div>
+    <!-- ========================================================
+         ABOUT
+    ======================================================== -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+
+        <div class="about-photo-wrap">
+          <img src="assets/images/profile.jpg" alt="Joanita Nakityo" class="about-photo">
         </div>
 
-        <div class="col-sm-4 pt-3">
-          <div class="card">
-            <img src="bootstrap/media/images/mentorship.JPG" class="ms-0 img-thumbnail" style="height:25%; width: 95%;" />
-            <div class="card-body overflow-auto">
-              <h5 class="card-title">Mentorship Club</h5>
-              <p class="card-text">I designed a responsive school club website using HTML, CSS an Javascript</p>
-              <a href="http://mentorship-1.herokuapp.com/" class="btn btn-secondary"  target="_blank">website</a>
-             
-            </div>
+        <div class="about-text">
+          <h2 id="about-heading" class="section-title">About Me</h2>
+          <p>I am a software engineer with graduate research experience in systems security,
+            secure systems programming, and Rust. During my M.S. studies at UNIST, I worked on
+            memory safety and compiler- and runtime-assisted software protection, designing and
+            evaluating a systems-security research prototype.</p>
+          <p>Before graduate school, I gained experience in software engineering, project
+            management, robotic process automation, and developer education. I enjoy turning
+            complex ideas into practical solutions and collaborating on secure, reliable, and
+            useful technologies.</p>
+          <p>I am currently seeking opportunities in software engineering, systems software,
+            cybersecurity, and secure infrastructure, and I am open to relocation.</p>
+
+          <div class="about-links">
+            <a href="https://github.com/JOANITA-51" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/nakityo-joanita-36900a1b5/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+            </a>
+            <a href="https://docs.google.com/document/d/1WvvMepLl4MH__rhwPii7loFRAMUhac6Ho7lS1qiQ4e4/preview"
+               class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <i class="fa-regular fa-file-lines" aria-hidden="true"></i> Résumé
+            </a>
           </div>
         </div>
+
       </div>
-    
-    
-    <div style="text-align: center;">
-        <h5>Please check more:</h5>
-        <a href="https://www.figma.com/file/pM0Re0QMSgto8vbD2ou9yi/profile?node-id=49%3A489" id="f" target="_blank"  ></a>
-        <i class="fab fa-figma px-5 pt-2" style="font-size:58px"></i>
-        </a>
-      <a href="https://github.com/JOANITA-51" id="G"  target="_blank">
-        <i class="fab fa-github px-5 pb-5" style="font-size:58px"></i>
-        
-      </a>
- 
- 
-    </div>
-  </section>
-     <!--end of work page--> 
+    </section>
 
-     <!--Testimonials page-->
-     <section id="testimonials">
-      <div class="gtco-testimonials pt-5 ">
-        <h2>What people say</h2>
-        <div class="owl-carousel owl-carousel1 owl-theme">
-          <div>
-            <div class="card text-center "><img class="card-img-top" src="bootstrap/media/images/kalenda.png" alt="Computer Scientist">
-              <div class="card-body overflow-auto">
-                <h5>Kalenda Racheal<br />
-                  <span>~Computer Scientist </span>
-                </h5>
-                <p class="card-text">“Joanita is hardworking, teamwork-oriented, friendly and yet a multi-tasker.
-                      We worked together during a hackathon where we were tasked to find a problem and find solutions to it.
-                      I realized that Joanita is so creative and has passion for software development most especially finding solutions to prevailing problems.
-                       I personally sometimes get motivation from her.
-                      I greatly believe that once added to your team, she will be an asset to your organization. ” </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/Mr.David W.jpg" alt="coach">
-              <div class="card-body overflow-auto">
-                <h5>David Wampamba<br />
-                  <span>~Teacher | Software Developer </span>
-                </h5>
-                <p class="card-text">“ I met Miss Nakityo Joanita a few months ago at Ablestate Creatives Ltd.
-                  Joanita is among the six out of 30 applicants who were awarded a scholarship in software development skills at Ablestate. 
-                  I am her coach. I have found her to be committed, vibrant, punctual, and a person with a positive attitude. 
-                 I would highly commend her for any opportunity. ” </p>
-              </div>
-            </div>
-          </div>
-          
-           <div>
-            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/Desire.jpg" alt="-classmate">
-              <div class="card-body overflow-auto">
-                <h5>Desire Awori <br />
-                  <span>~software engineer </span>
-                </h5>
-                <p class="card-text">“ Joanita is an IT genius. I have watched her work on numerous projects which all turn out really 
-                  well because of the time and effort she puts in. When she is really into a particular IT related project,
-                   she literally works day and night to make it a success. Being in the same class with her has made me draw
-                    motivation from her in the field of IT and I can strongly say Joanita is the best. ” </p>
-              </div>
-            </div>
-          </div>
-          
-          <div>
-            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/joan.jpg" alt="-classmate">
-              <div class="card-body overflow-auto">
-                <h5>Joanita Anyango<br />
-                  <span> ~software engineer</span>
-                </h5>
-                <p class="card-text">“ Meet Nakityo Joanita, a very disciplined, hardworking and determined lady with great IT skills. 
-                  Her great passion for solving problems in the real world has made her a 
-                  great developer. She is very social hence liked by the people she works with.” </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/pully.jpg" alt="-classmate">
-              <div class="card-body overflow-auto">
-                <h5>Mary Priscilla Kizza <br />
-                  <span> ~software engineer</span>
-                </h5>
-                <p class="card-text">“ This is my friend Joanita, the first friend I made in my software engineering class that I saw I could graduate with.
-                  Even before we graduated she already had a certificate from the University of Michigan.She is the most reliable hardworking girl I know and you can trust her to get the job done.
-                  i have never seen one more in love with IT like her not only IT but software world in general desiring to use her skills to create change in it.She is amazing as an engineer but also as a friend. 
-                  I've seen her spend days seated at her desk without eating yet she didn't complain or claim to be hungry or tired. She has the best energy in the room.Her capacity and capability is to die for.
-                   She is her unique geek self .” </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card text-center"><img class="card-img-top" src="bootstrap/media/images/Halimah B.jpg" alt="-classmate">
-              <div class="card-body overflow-auto">
-                <h5>Bukirwa Halimah <br />
-                  <span> ~software engineer</span>
-                </h5>
-                <p class="card-text">“ I know Nakityo Joanita to be a goal-oriented and self-driven enthusiatic developer.
-                  Her immense love for technology and her deep desire to use it not only for her benefit but also for the benefit of her community, completely sets her apart. She not only dreams but also goes ahead to do everything in her power to achieve those dreams. She does with excellence whatever she sets her mind on and finds her hands to do. She is without a doubt an achiever.
-                  ” </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-     </section>
-    
-    <!--end of testimonials page-->
-     
-    
-<!-- Footer -->
-<section class="text-white"  style="background-color:  rgb(78, 76, 76);">
-<footer class=" text-lg-start text-white">
-  <!-- Section: Social media -->
+    <!-- ========================================================
+         SELECTED WORK
+    ======================================================== -->
+    <section class="section section-alt" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <h2 id="work-heading" class="section-title">Selected Work</h2>
+        <p class="section-lead">A selection of projects from research and professional practice.</p>
 
-  <!-- Section: Social media -->
+        <div class="project-grid">
 
-  <!-- Section: Links  -->
- 
-    <div class="container  text-md-start">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-6 col-xl-3 mx-auto mb-2">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mt-4 pt-5" id="feedback">
-            <i class="fas fa-gem me-3"></i>Contact
-          </h6>
-          <section id="contactForm" class="p-3 mb-2 text-white">
-            <form action="https://formsubmit.co/nakityojoanita51@gmail.com" method="POST">
-                <div>
-                    <label for="fullname">Name:</label><br/>
-                    <input type="text" name="fullname" id="fullname">
-                </div>
-                
-                <div>
-                    <label for="email">Email:</label><br/>
-                        <input type="text" name="email" id="email" >
-                    </label>
-                </div>
-    
-                <div>
-                    <label for="message">Message:</label><br/>
-                    <textarea name="message" id="message" cols="30" rows="2"></textarea>
-                </div>
-                <a href="#" target="_blank">
-                <button class="btn p-3 mb-2 bg-dark text-white" id="Send">Send</button>
+          <!-- Research project — embargoed -->
+          <article class="project-card project-card--featured" aria-labelledby="proj-research-title">
+            <div class="project-card-header">
+              <h3 id="proj-research-title" class="project-title">Master's Research Project in Systems Security</h3>
+              <span class="project-status">Graduate Research</span>
+            </div>
+            <p class="project-desc">Completed graduate research investigating security at the boundary
+              between safe Rust applications and external native-code components. Designed and evaluated
+              a research prototype involving compiler and runtime techniques.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li class="tag">Rust</li>
+              <li class="tag">Systems Security</li>
+              <li class="tag">Systems Programming</li>
+              <li class="tag">Compiler Technologies</li>
+            </ul>
+            <p class="project-notice">
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              Technical details are withheld pending public release of the thesis in 2027.
+            </p>
+          </article>
+
+          <!-- Schotrix -->
+          <article class="project-card" aria-labelledby="proj-schotrix-title">
+            <div class="project-card-img-wrap">
+              <img src="assets/images/schotrix.jpg" alt="Schotrix school booking system screenshot" class="project-img">
+            </div>
+            <div class="project-card-body">
+              <h3 id="proj-schotrix-title" class="project-title">Schotrix</h3>
+              <p class="project-desc">An online school booking system built with the MERN stack
+                (MongoDB, Express, React, Node.js), offering flexible scheduling for institutions
+                to book and manage appointments.</p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li class="tag">MongoDB</li>
+                <li class="tag">Express</li>
+                <li class="tag">React</li>
+                <li class="tag">Node.js</li>
+              </ul>
+              <a href="https://schotrix.netlify.app/" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                Live Site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
               </a>
-            </form>
-        </div>
-        <!-- Grid column -->
-        
+            </div>
+          </article>
 
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-4 md-start ">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4 pt-5">
-            connect with me on social media
-          </h6>
-          <a href="https://twitter.com/nakityojoanita" class="text-white" target="_blank">
-            <i class="fa fa-twitter-square pt-3" style="font-size:36px"></i> <i>Twitter</i>
-                             
-        </a><br/>
-        <a href="https://www.linkedin.com/in/nakityo-joanita-36900a1b5/"class="text-white" target="_blank">
-          <i class="fa fa-linkedin-square pt-3" style="font-size:36px"></i> <i>Linkedin</i>
-        </a><br/>
-        <a href="https://www.facebook.com/nakityo.anita.3/"class="text-white" target="_blank">
-          <i class="fa fa-facebook-square pt-3" style="font-size:36px"></i>  <i>Facebook</i>
-        </a><br/>
-          
+          <!-- Alfasente -->
+          <article class="project-card" aria-labelledby="proj-alfasente-title">
+            <div class="project-card-img-wrap">
+              <img src="assets/images/alfasente.jpg" alt="Alfasente fintech product screenshot" class="project-img">
+            </div>
+            <div class="project-card-body">
+              <h3 id="proj-alfasente-title" class="project-title">Alfasente</h3>
+              <p class="project-desc">A fintech product developed during the Women in Fintech Hackathon
+                Uganda (HiPipo, Mojaloop, Level One Project). The product bridges business and finance
+                to promote financial inclusion.</p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li class="tag">Fintech</li>
+                <li class="tag">Hackathon</li>
+                <li class="tag">Financial Inclusion</li>
+              </ul>
+              <a href="https://alfasente.com/" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                Live Site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Mentorship Club -->
+          <article class="project-card" aria-labelledby="proj-mentorship-title">
+            <div class="project-card-img-wrap">
+              <img src="assets/images/mentorship.jpg" alt="Mentorship Club website screenshot" class="project-img">
+            </div>
+            <div class="project-card-body">
+              <h3 id="proj-mentorship-title" class="project-title">Mentorship Club</h3>
+              <p class="project-desc">A responsive school club website built with HTML, CSS, and JavaScript.</p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+              <!-- TODO: replace with the actual GitHub repository URL for the Mentorship Club project -->
+              <a href="https://github.com/JOANITA-51" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                View on GitHub <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /.project-grid -->
+
+        <p class="work-more">
+          More on
+          <a href="https://github.com/JOANITA-51" target="_blank" rel="noopener noreferrer" aria-label="JOANITA-51 GitHub profile">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+          </a>
+          and
+          <a href="https://www.figma.com/file/pM0Re0QMSgto8vbD2ou9yi/profile?node-id=49%3A489" target="_blank" rel="noopener noreferrer" aria-label="Figma design portfolio">
+            <i class="fa-brands fa-figma" aria-hidden="true"></i> Figma
+          </a>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         EXPERIENCE
+    ======================================================== -->
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <h2 id="experience-heading" class="section-title">Experience</h2>
+
+        <ol class="timeline" role="list">
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Graduate Student Researcher</h3>
+                <span class="timeline-period">Sep 2024 – <!-- TODO: confirm official ending month in 2026 --> 2026</span>
+              </div>
+              <p class="timeline-org">Computer Systems Security Lab, UNIST</p>
+              <ul class="timeline-bullets">
+                <li>Conducted graduate research in systems security, systems programming, and memory safety.</li>
+                <li>Designed, implemented, and evaluated research prototypes.</li>
+                <li>Performed benchmarking and performance analysis.</li>
+                <li>Reviewed programming assignments and provided technical feedback as a Teaching Assistant.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Project Manager</h3>
+                <span class="timeline-period">Jan 2022 – Jul 2024</span>
+              </div>
+              <p class="timeline-org">Alfajiri Innovations Limited</p>
+              <ul class="timeline-bullets">
+                <li>Managed software projects from planning through delivery.</li>
+                <li>Coordinated project requirements, timelines, stakeholders, and development activities.</li>
+                <li>Maintained documentation and tracked deliverables and milestones.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Women in Tech Placement</h3>
+                <span class="timeline-period">Sep 2023 – Dec 2023</span>
+              </div>
+              <p class="timeline-org">Stanbic Bank Uganda</p>
+              <ul class="timeline-bullets">
+                <li>Received practical training in robotic process automation, software development, and digital transformation.</li>
+                <li>Developed automation workflows and contributed to process analysis.</li>
+                <li>Earned an RPA Developer certification.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Junior Software Engineer</h3>
+                <span class="timeline-period">Nov 2022 – Oct 2023</span>
+              </div>
+              <p class="timeline-org">Ubunifu Systems</p>
+              <ul class="timeline-bullets">
+                <li>Contributed to frontend and backend web application development.</li>
+                <li>Developed features using JavaScript and Firebase technologies.</li>
+                <li>Participated in software design, testing, and debugging.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Developer and Instructor Intern</h3>
+                <span class="timeline-period">Jun 2022 – Aug 2022</span>
+              </div>
+              <p class="timeline-org">Ablestate</p>
+              <ul class="timeline-bullets">
+                <li>Taught introductory HTML, CSS, JavaScript, and Bootstrap.</li>
+                <li>Guided students in building an e-commerce website from Figma designs.</li>
+                <li>Developed a JavaScript quiz application and learning materials.</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SKILLS & EDUCATION
+    ======================================================== -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+      <div class="container skills-education-grid">
+
+        <!-- Skills -->
+        <div>
+          <h2 id="skills-heading" class="section-title">Skills</h2>
+
+          <dl class="skill-groups">
+
+            <div class="skill-group">
+              <dt class="skill-group-label">Systems &amp; Security</dt>
+              <dd class="tag-list">
+                <span class="tag">Systems Security</span>
+                <span class="tag">Memory Safety</span>
+                <span class="tag">Secure Software Development</span>
+              </dd>
+            </div>
+
+            <div class="skill-group">
+              <dt class="skill-group-label">Programming</dt>
+              <dd class="tag-list">
+                <span class="tag">Rust</span>
+                <span class="tag">C / C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+              </dd>
+            </div>
+
+            <div class="skill-group">
+              <dt class="skill-group-label">Systems &amp; Tools</dt>
+              <dd class="tag-list">
+                <span class="tag">Linux</span>
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Docker</span>
+                <span class="tag">LLVM</span>
+              </dd>
+            </div>
+
+            <div class="skill-group">
+              <dt class="skill-group-label">Web Development</dt>
+              <dd class="tag-list">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">Firebase</span>
+              </dd>
+            </div>
+
+            <div class="skill-group">
+              <dt class="skill-group-label">Research</dt>
+              <dd class="tag-list">
+                <span class="tag">Prototype Development</span>
+                <span class="tag">Benchmarking</span>
+                <span class="tag">Performance Analysis</span>
+                <span class="tag">Technical Writing</span>
+              </dd>
+            </div>
+
+            <div class="skill-group">
+              <dt class="skill-group-label">Professional</dt>
+              <dd class="tag-list">
+                <span class="tag">Project Management</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">Mentoring</span>
+                <span class="tag">Team Coordination</span>
+              </dd>
+            </div>
+
+          </dl>
         </div>
-        <!-- Grid column -->
-       
-      <!-- Grid row -->
+
+        <!-- Education -->
+        <div>
+          <h2 id="education-heading" class="section-title">Education</h2>
+
+          <ul class="education-list" role="list">
+
+            <li class="education-item">
+              <div class="education-header">
+                <h3 class="education-degree">M.S. in Computer Science</h3>
+                <span class="education-period">2024 – 2026</span>
+              </div>
+              <p class="education-school">Ulsan National Institute of Science and Technology (UNIST)</p>
+              <p class="education-note">Research area: Systems security and secure systems programming</p>
+            </li>
+
+            <li class="education-item">
+              <div class="education-header">
+                <h3 class="education-degree">B.S. in Software Engineering</h3>
+              </div>
+              <p class="education-school">Makerere University</p>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CREDENTIALS
+    ======================================================== -->
+    <section class="section" id="credentials" aria-labelledby="credentials-heading">
+      <div class="container">
+        <h2 id="credentials-heading" class="section-title">Selected Credentials</h2>
+
+        <ul class="credential-list" role="list">
+
+          <li class="credential-item">
+            <div class="credential-icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></div>
+            <div class="credential-body">
+              <p class="credential-name">RPA Developer Certification</p>
+              <p class="credential-issuer">Stanbic Bank — Women in Tech Programme</p>
+              <!-- TODO: add verified credential URL if available -->
+            </div>
+          </li>
+
+          <li class="credential-item">
+            <div class="credential-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="credential-body">
+              <p class="credential-name">Pangea Securathon Participant</p>
+              <p class="credential-issuer">Pangea</p>
+              <!-- TODO: add verified credential URL if available -->
+            </div>
+          </li>
+
+          <li class="credential-item">
+            <div class="credential-icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></div>
+            <div class="credential-body">
+              <p class="credential-name">Project Management Fundamentals</p>
+              <p class="credential-issuer">IBM</p>
+              <!-- TODO: add verified credential URL if available -->
+            </div>
+          </li>
+
+          <li class="credential-item">
+            <div class="credential-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="credential-body">
+              <p class="credential-name">Web Design for Everybody</p>
+              <p class="credential-issuer">University of Michigan / Coursera</p>
+              <!-- TODO: add verified credential URL if available -->
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CONTACT
+    ======================================================== -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-inner">
+
+        <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+        <p class="section-lead">I'm open to new opportunities, collaborations, and conversations. Reach me through any of the channels below.</p>
+
+        <ul class="contact-links" role="list">
+
+          <li>
+            <a href="mailto:nakityojoanita51@gmail.com" class="contact-link">
+              <span class="contact-link-icon" aria-hidden="true"><i class="fa-regular fa-envelope"></i></span>
+              <span class="contact-link-text">
+                <strong>Email</strong>
+                <span>nakityojoanita51@gmail.com</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/nakityo-joanita-36900a1b5/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <span class="contact-link-icon" aria-hidden="true"><i class="fa-brands fa-linkedin"></i></span>
+              <span class="contact-link-text">
+                <strong>LinkedIn</strong>
+                <span>nakityo-joanita-36900a1b5</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/JOANITA-51" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <span class="contact-link-icon" aria-hidden="true"><i class="fa-brands fa-github"></i></span>
+              <span class="contact-link-text">
+                <strong>GitHub</strong>
+                <span>JOANITA-51</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://docs.google.com/document/d/1WvvMepLl4MH__rhwPii7loFRAMUhac6Ho7lS1qiQ4e4/preview"
+               class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="View résumé (opens Google Docs preview)">
+              <span class="contact-link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>
+              <span class="contact-link-text">
+                <strong>Résumé</strong>
+                <span>View on Google Docs</span>
+              </span>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+  </main><!-- /#main-content -->
+
+  <!-- ========================================================
+       FOOTER
+  ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <p class="footer-name">Joanita Nakityo</p>
+
+      <ul class="footer-social" role="list">
+        <li>
+          <a href="https://github.com/JOANITA-51" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/nakityo-joanita-36900a1b5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+        <!-- Twitter/X handle TODO: confirm @nakityojoanita is still active before enabling
+        <li>
+          <a href="https://twitter.com/nakityojoanita" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X profile">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        -->
+      </ul>
+
+      <p class="footer-copy">
+        &copy; <span id="copyright-year"></span> Joanita Nakityo. All rights reserved.
+      </p>
+
     </div>
   </footer>
-  </section>
- 
-  <!-- Section: Links  -->
 
-  <!-- Copyright -->
-  <div class="text-center p-4 fw-bold bg-light">
-    © Copyright 2022
-   
-  </div>
-  <!-- Copyright -->
-
-<!-- Footer -->
-
-    <script src="bootstrap/js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!--Jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-<!-- Owl Carousel -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-      var nav = document.querySelector('nav');
-
-      window.addEventListener('scroll', function(){
-        if(window.pageYOffset > 100){
-          nav.classList.add('bg-dark','shadow');
-        }else{
-          nav.classList.remove('bg-dark','shadow')
-        }
-        
-      })
-    </script>
-    <script>
-      (function () {
-  "use strict";
-
-  var carousels = function () {
-    $(".owl-carousel1").owlCarousel({
-      loop: true,
-      center: true,
-      margin: 0,
-      responsiveClass: true,
-      nav: false,
-      responsive: {
-        0: {
-          items: 1,
-          nav: false
-        },
-        680: {
-          items: 2,
-          nav: false,
-          loop: false
-        },
-        1000: {
-          items: 3,
-          nav: true
-        }
-      }
-    });
-  };
-
-  (function ($) {
-    carousels();
-  })(jQuery);
-})();
-
-    </script>
-
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
-  
