@@ -29,8 +29,8 @@
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/styles.css">
 
-  <!-- Font Awesome Kit (single source — replaces the old FA 4.7 CDN link) -->
-  <script src="https://kit.fontawesome.com/48c3200d20.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome 6.7.2 (cdnjs — self-contained, no kit script) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 
@@ -44,8 +44,8 @@
     <nav class="nav-bar" aria-label="Primary navigation">
       <div class="nav-inner">
 
-        <a href="#top" class="nav-logo" aria-label="Joanita Nakityo — home">
-          <img src="assets/images/logo.svg" width="48" height="48" alt="JN logo">
+        <a href="#intro" class="nav-logo" aria-label="Joanita Nakityo — home">
+          <img src="assets/images/logo.svg" width="48" height="48" alt="">
         </a>
 
         <!-- Hamburger (mobile) -->
@@ -56,7 +56,7 @@
         </button>
 
         <ul class="nav-links" id="nav-menu" role="list">
-          <li><a href="#about"       class="nav-link">About</a></li>
+          <li><a href="#intro"       class="nav-link">About</a></li>
           <li><a href="#work"        class="nav-link">Work</a></li>
           <li><a href="#experience"  class="nav-link">Experience</a></li>
           <li><a href="#skills"      class="nav-link">Skills</a></li>
@@ -71,65 +71,47 @@
   <main id="main-content">
 
     <!-- ========================================================
-         HERO
+         INTRODUCTION  (combined hero + about)
     ======================================================== -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="hero-content container">
-        <p class="hero-eyebrow">Hello, I'm</p>
-        <h1 id="hero-heading" class="hero-name">Joanita Nakityo</h1>
-        <p class="hero-title">Software Engineer</p>
-        <p class="hero-sub">Graduate research experience in systems security, Rust, and systems programming.<br>
-          I build secure, reliable software — from systems research to full-stack development.</p>
-        <div class="hero-actions">
-          <a href="#work"    class="btn btn-primary">View Selected Work</a>
-          <!-- TODO: replace href with the actual résumé PDF path or Google Doc export link once confirmed -->
-          <a href="https://docs.google.com/document/d/1WvvMepLl4MH__rhwPii7loFRAMUhac6Ho7lS1qiQ4e4/preview"
-             class="btn btn-outline" target="_blank" rel="noopener noreferrer">Download Résumé</a>
-          <a href="#contact" class="btn btn-ghost">Contact Me</a>
-        </div>
-        <p class="hero-relocation">
-          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-          Open to relocation
-        </p>
-      </div>
-    </section>
+    <section class="intro-section" id="intro" aria-labelledby="intro-heading">
+      <div class="container intro-grid">
 
-    <!-- ========================================================
-         ABOUT
-    ======================================================== -->
-    <section class="section" id="about" aria-labelledby="about-heading">
-      <div class="container about-grid">
+        <!-- ── Text ── -->
+        <div class="intro-text">
+          <p class="intro-eyebrow">Hello, I'm</p>
+          <h1 id="intro-heading" class="intro-name">Joanita (Anita) Nakityo</h1>
+          <p class="intro-role">Software Engineer</p>
 
-        <div class="about-photo-wrap">
-          <img src="assets/images/profile.jpg" alt="Joanita Nakityo" class="about-photo">
-        </div>
+          <div class="intro-body">
+            <p>
+              Graduate research experience in systems security, Rust, and systems programming. <br/>
+              I build software ranging from systems research to full-stack development.
+            </p>
 
-        <div class="about-text">
-          <h2 id="about-heading" class="section-title">About Me</h2>
-          <p>I am a software engineer with graduate research experience in systems security,
-            secure systems programming, and Rust. During my M.S. studies at UNIST, I worked on
-            memory safety and compiler- and runtime-assisted software protection, designing and
-            evaluating a systems-security research prototype.</p>
-          <p>Before graduate school, I gained experience in software engineering, project
-            management, robotic process automation, and developer education. I enjoy turning
-            complex ideas into practical solutions and collaborating on secure, reliable, and
-            useful technologies.</p>
-          <p>I am currently seeking opportunities in software engineering, systems software,
-            cybersecurity, and secure infrastructure, and I am open to relocation.</p>
-
-          <div class="about-links">
-            <a href="https://github.com/JOANITA-51" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/nakityo-joanita-36900a1b5/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
-            </a>
-            <a href="https://docs.google.com/document/d/1WvvMepLl4MH__rhwPii7loFRAMUhac6Ho7lS1qiQ4e4/preview"
-               class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-              <i class="fa-regular fa-file-lines" aria-hidden="true"></i> Résumé
-            </a>
           </div>
+
+          <div class="intro-actions">
+            <a
+              href="assets/documents/Joanita_Nakityo_Resume.pdf"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-regular fa-file-lines" aria-hidden="true"></i> View Résumé
+            </a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- ── Portrait ── -->
+        <div class="intro-portrait-wrap">
+          <img
+            src="assets/images/joanita-profile.png"
+            alt="Portrait of Joanita Nakityo."
+            class="intro-portrait"
+            width="435"
+            height="574"
+          >
         </div>
 
       </div>
@@ -138,7 +120,7 @@
     <!-- ========================================================
          SELECTED WORK
     ======================================================== -->
-    <section class="section section-alt" id="work" aria-labelledby="work-heading">
+    <section class="section" id="work" aria-labelledby="work-heading">
       <div class="container">
         <h2 id="work-heading" class="section-title">Selected Work</h2>
         <p class="section-lead">A selection of projects from research and professional practice.</p>
@@ -209,7 +191,7 @@
             </div>
           </article>
 
-          <!-- Mentorship Club -->
+          <!-- Mentorship Club — commented out until a specific repository URL is available
           <article class="project-card" aria-labelledby="proj-mentorship-title">
             <div class="project-card-img-wrap">
               <img src="assets/images/mentorship.jpg" alt="Mentorship Club website screenshot" class="project-img">
@@ -222,12 +204,12 @@
                 <li class="tag">CSS</li>
                 <li class="tag">JavaScript</li>
               </ul>
-              <!-- TODO: replace with the actual GitHub repository URL for the Mentorship Club project -->
-              <a href="https://github.com/JOANITA-51" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+              <a href="TODO_MENTORSHIP_GITHUB_URL" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
                 View on GitHub <i class="fa-brands fa-github" aria-hidden="true"></i>
               </a>
             </div>
           </article>
+          -->
 
         </div><!-- /.project-grid -->
 
@@ -248,7 +230,7 @@
     <!-- ========================================================
          EXPERIENCE
     ======================================================== -->
-    <section class="section" id="experience" aria-labelledby="experience-heading">
+    <section class="section section-alt" id="experience" aria-labelledby="experience-heading">
       <div class="container">
         <h2 id="experience-heading" class="section-title">Experience</h2>
 
@@ -339,10 +321,81 @@
       </div>
     </section>
 
+
+    <!-- ========================================================
+         TESTIMONIALS (commented out — re-enable when needed)
+    ========================================================
+    <section class="section section-alt" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading" class="section-title">Testimonials</h2>
+
+        <div class="carousel-wrapper">
+          <button class="carousel-prev" aria-label="Previous testimonial">&#8249;</button>
+          <button class="carousel-next" aria-label="Next testimonial">&#8250;</button>
+
+          <ul class="carousel-track" role="list">
+
+            <li class="testimonial-card">
+              <img src="assets/images/kalenda.png" alt="Kalenda Racheal" class="testimonial-photo">
+              <blockquote>
+                <p>"Joanita is hardworking, dedicated, and a great team player. She consistently delivers quality work and is always willing to help others."</p>
+                <footer><strong>Kalenda Racheal</strong> — Computer Scientist</footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-card">
+              <img src="assets/images/mr-david-w.jpg" alt="David Wampamba" class="testimonial-photo">
+              <blockquote>
+                <p>"Joanita demonstrated exceptional technical skills and a strong work ethic throughout our time working together."</p>
+                <footer><strong>David Wampamba</strong> — Coach</footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-card">
+              <img src="assets/images/desire.jpg" alt="Desire Awori" class="testimonial-photo">
+              <blockquote>
+                <p>"She is one of the most focused and determined people I have studied alongside. Her passion for technology is inspiring."</p>
+                <footer><strong>Desire Awori</strong> — Classmate</footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-card">
+              <img src="assets/images/joan.jpg" alt="Joanita Anyango" class="testimonial-photo">
+              <blockquote>
+                <p>"Working with Joanita was a pleasure. She brings clarity, creativity, and commitment to every project."</p>
+                <footer><strong>Joanita Anyango</strong> — Classmate</footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-card">
+              <img src="assets/images/pully.jpg" alt="Mary Priscilla Kizza" class="testimonial-photo">
+              <blockquote>
+                <p>"Joanita is a reliable and skilled engineer. She always goes above and beyond to make sure the work is done right."</p>
+                <footer><strong>Mary Priscilla Kizza</strong> — Classmate</footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-card">
+              <img src="assets/images/halimah-b.jpg" alt="Bukirwa Halimah" class="testimonial-photo">
+              <blockquote>
+                <p>"Joanita has a great attitude and a genuine love for software engineering. She is both talented and humble."</p>
+                <footer><strong>Bukirwa Halimah</strong> — Classmate</footer>
+              </blockquote>
+            </li>
+
+          </ul>
+
+          <div class="carousel-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+    ======================================================== -->
+
+
     <!-- ========================================================
          SKILLS & EDUCATION
     ======================================================== -->
-    <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+    <section class="section" id="skills" aria-labelledby="skills-heading">
       <div class="container skills-education-grid">
 
         <!-- Skills -->
@@ -447,47 +500,69 @@
     <!-- ========================================================
          CREDENTIALS
     ======================================================== -->
-    <section class="section" id="credentials" aria-labelledby="credentials-heading">
+    <section class="section section-alt" id="credentials" aria-labelledby="credentials-heading">
       <div class="container">
         <h2 id="credentials-heading" class="section-title">Selected Credentials</h2>
 
         <ul class="credential-list" role="list">
 
           <li class="credential-item">
-            <div class="credential-icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></div>
+            <div class="credential-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
             <div class="credential-body">
-              <p class="credential-name">RPA Developer Certification</p>
-              <p class="credential-issuer">Stanbic Bank — Women in Tech Programme</p>
-              <!-- TODO: add verified credential URL if available -->
+              <p class="credential-name">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/specialization/GL6L2THUTSXP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Web Design for Everybody
+
+                </a>
+              </p>
+              <p class="credential-issuer">University of Michigan / Coursera</p>
             </div>
           </li>
 
           <li class="credential-item">
             <div class="credential-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
             <div class="credential-body">
-              <p class="credential-name">Pangea Securathon Participant</p>
+              <p class="credential-name">
+                <a
+                  href="https://www.credly.com/badges/22b40c5f-5b13-439f-8806-cf3414dbfd44/public_url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pangea Securathon Participant
+                </a>
+                
+              </p>
               <p class="credential-issuer">Pangea</p>
-              <!-- TODO: add verified credential URL if available -->
             </div>
           </li>
 
           <li class="credential-item">
             <div class="credential-icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></div>
             <div class="credential-body">
-              <p class="credential-name">Project Management Fundamentals</p>
+              <p class="credential-name">
+                <a
+                  href="https://www.credly.com/badges/1a094e8f-0212-44ae-b0dc-cbdd351b13b2/public_url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Project Management Fundamentals
+                </a>
+              </p>
               <p class="credential-issuer">IBM</p>
-              <!-- TODO: add verified credential URL if available -->
             </div>
-          </li>
-
+          </li> 
+          
           <li class="credential-item">
-            <div class="credential-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="credential-icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></div>
             <div class="credential-body">
-              <p class="credential-name">Web Design for Everybody</p>
-              <p class="credential-issuer">University of Michigan / Coursera</p>
-              <!-- TODO: add verified credential URL if available -->
+              <p class="credential-name">RPA Developer Certification</p>
+              <p class="credential-issuer">Stanbic Bank — Women in Tech Programme</p>
             </div>
-          </li>
+          </li>          
 
         </ul>
       </div>
@@ -496,7 +571,7 @@
     <!-- ========================================================
          CONTACT
     ======================================================== -->
-    <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+    <section class="section" id="contact" aria-labelledby="contact-heading">
       <div class="container contact-inner">
 
         <h2 id="contact-heading" class="section-title">Get in Touch</h2>
@@ -515,11 +590,21 @@
           </li>
 
           <li>
-            <a href="https://www.linkedin.com/in/nakityo-joanita-36900a1b5/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <a href="https://www.linkedin.com/in/joanita-nakityo-36900a1b5/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
               <span class="contact-link-icon" aria-hidden="true"><i class="fa-brands fa-linkedin"></i></span>
               <span class="contact-link-text">
                 <strong>LinkedIn</strong>
-                <span>nakityo-joanita-36900a1b5</span>
+                <span>joanita-nakityo-36900a1b5</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/NakityoJoanita/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="X profile">
+              <span class="contact-link-icon" aria-hidden="true"><i class="fa-brands fa-x-twitter"></i></span>
+              <span class="contact-link-text">
+                <strong>X</strong>
+                <span>NakityoJoanita</span>
               </span>
             </a>
           </li>
@@ -530,17 +615,6 @@
               <span class="contact-link-text">
                 <strong>GitHub</strong>
                 <span>JOANITA-51</span>
-              </span>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://docs.google.com/document/d/1WvvMepLl4MH__rhwPii7loFRAMUhac6Ho7lS1qiQ4e4/preview"
-               class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="View résumé (opens Google Docs preview)">
-              <span class="contact-link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>
-              <span class="contact-link-text">
-                <strong>Résumé</strong>
-                <span>View on Google Docs</span>
               </span>
             </a>
           </li>
@@ -567,17 +641,15 @@
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/nakityo-joanita-36900a1b5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <a href="https://www.linkedin.com/in/joanita-nakityo-36900a1b5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
             <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
           </a>
         </li>
-        <!-- Twitter/X handle TODO: confirm @nakityojoanita is still active before enabling
         <li>
-          <a href="https://twitter.com/nakityojoanita" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X profile">
+          <a href="https://twitter.com/NakityoJoanita" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X profile (@NakityoJoanita)">
             <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
           </a>
         </li>
-        -->
       </ul>
 
       <p class="footer-copy">
