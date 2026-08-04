@@ -567,16 +567,55 @@ a:hover {
   filter: drop-shadow(0 16px 30px rgba(22, 34, 56, 0.14));
 }
 
-/* ─── Selected Work ──────────────────────────────────────── */
+/* ─── Work section ───────────────────────────────────────── */
+
+/* Category label above card title */
+.project-category {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold-dark);
+  margin-bottom: var(--space-2);
+}
+
+/* Collaboration / embargo note */
+.project-collab {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--color-slate);
+  font-style: italic;
+  margin-top: auto;
+  padding-top: var(--space-2);
+}
+.project-collab i {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  color: var(--color-gold-dark);
+  opacity: 0.85;
+}
+/* Embargo variant — lock icon colour */
+.project-collab--embargo i {
+  color: var(--color-slate);
+  opacity: 0.7;
+}
+
+/* Action row inside card body */
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+/* Project grid — uniform auto-fill */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--space-6);
-}
-
-/* Featured research card spans full width */
-.project-card--featured {
-  grid-column: 1 / -1;
 }
 
 .project-card {
@@ -592,76 +631,6 @@ a:hover {
 .project-card:hover {
   box-shadow: var(--shadow-lg);
   transform: translateY(-2px);
-}
-
-/* Featured card */
-.project-card--featured {
-  padding: var(--space-8);
-  background: var(--color-navy);
-  border-color: rgba(255,255,255,0.08);
-  background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-  background-size: 40px 40px;
-  background-position: center;
-}
-
-.project-card--featured .project-card-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-4);
-  margin-bottom: var(--space-5);
-}
-
-.project-card--featured .project-title {
-  color: var(--color-white);
-  font-size: var(--text-2xl);
-  font-weight: 700;
-}
-
-.project-card--featured .project-desc {
-  color: rgba(255,255,255,0.75);
-  max-width: 70ch;
-}
-
-.project-card--featured .tag {
-  background: rgba(255,255,255,0.12);
-  color: rgba(255,255,255,0.88);
-  border-color: rgba(255,255,255,0.2);
-}
-
-.project-status {
-  display: inline-block;
-  font-size: var(--text-xs);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.25em 0.75em;
-  border-radius: var(--radius-full);
-  background: rgba(198,154,69,0.25);
-  color: var(--color-gold-light);
-  border: 1px solid rgba(198,154,69,0.45);
-  white-space: nowrap;
-}
-
-.project-notice {
-  margin-top: var(--space-5);
-  padding: var(--space-4);
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: var(--radius-md);
-  font-size: var(--text-sm);
-  color: rgba(255,255,255,0.65);
-  display: flex;
-  gap: var(--space-2);
-  align-items: flex-start;
-}
-.project-notice i {
-  margin-top: 0.1em;
-  flex-shrink: 0;
-  color: var(--color-gold);
-  opacity: 0.8;
 }
 
 /* Standard card */
@@ -745,6 +714,14 @@ a:hover {
   color: var(--color-gold-dark);
   text-decoration: underline;
   text-decoration-color: var(--color-gold);
+}
+
+
+/* ─── Technical Writing ─────────────────────────────────── */
+.writing-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
 }
 
 
@@ -854,25 +831,60 @@ a:hover {
   align-items: start;
 }
 
-/* Skills */
-.skill-groups {
+/* Graduation photo column */
+.edu-photo-col {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-5);
+  justify-content: center;
 }
 
-.skill-group {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
+.edu-photo-wrap {
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
 }
 
-.skill-group-label {
+.edu-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius-lg);
+  display: block;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+}
+
+.edu-photo-caption {
+  margin-top: var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--color-slate);
+  text-align: center;
+  font-style: italic;
+  line-height: var(--leading-normal);
+}
+
+/* Core Skills row beneath degree list */
+.edu-core-skills {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.edu-core-skills-label {
   font-size: var(--text-xs);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--color-slate);
+  margin-bottom: var(--space-3);
+}
+
+/* Muted tag variant — visually lighter than Work card tags */
+.tag--muted {
+  background: transparent;
+  color: var(--color-slate);
+  border-color: var(--color-border);
+  font-weight: 500;
 }
 
 /* Education */
@@ -1197,18 +1209,14 @@ a:hover {
     max-width: 100%;
   }
 
-  /* Projects */
-  .project-card--featured {
-    padding: var(--space-6);
-  }
-
-  .project-card--featured .project-title {
-    font-size: var(--text-xl);
-  }
-
   /* Skills / Education */
   .skills-education-grid {
     grid-template-columns: 1fr;
+  }
+
+  .edu-photo-wrap {
+    max-width: 280px;
+    margin-inline: auto;
   }
 }
 

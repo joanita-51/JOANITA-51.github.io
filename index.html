@@ -118,98 +118,149 @@
     </section>
 
     <!-- ========================================================
-         SELECTED WORK
+         WORK
     ======================================================== -->
     <section class="section" id="work" aria-labelledby="work-heading">
       <div class="container">
-        <h2 id="work-heading" class="section-title">Selected Work</h2>
-        <p class="section-lead">A selection of projects from research and professional practice.</p>
+
+        <h2 id="work-heading" class="section-title">Work</h2>
+        <p class="section-lead">A selection of projects from research, academic coursework, and professional practice.</p>
 
         <div class="project-grid">
 
-          <!-- Research project — embargoed -->
-          <article class="project-card project-card--featured" aria-labelledby="proj-research-title">
-            <div class="project-card-header">
+          <!-- Master's Research Project — embargoed -->
+          <article class="project-card" aria-labelledby="proj-research-title">
+            <div class="project-card-body">
+              <span class="project-category">Graduate Research</span>
               <h3 id="proj-research-title" class="project-title">Master's Research Project in Systems Security</h3>
-              <span class="project-status">Graduate Research</span>
+              <p class="project-desc">Explored methods for improving security between Rust applications and external native-code components.</p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li class="tag">Rust</li>
+                <li class="tag">Systems Security</li>
+                <li class="tag">Compilers</li>
+              </ul>
+              <p class="project-collab project-collab--embargo">
+                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                Details withheld pending thesis release in 2027.
+              </p>
             </div>
-            <p class="project-desc">Completed graduate research investigating security at the boundary
-              between safe Rust applications and external native-code components. Designed and evaluated
-              a research prototype involving compiler and runtime techniques.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li class="tag">Rust</li>
-              <li class="tag">Systems Security</li>
-              <li class="tag">Systems Programming</li>
-              <li class="tag">Compiler Technologies</li>
-            </ul>
-            <p class="project-notice">
-              <i class="fa-solid fa-lock" aria-hidden="true"></i>
-              Technical details are withheld pending public release of the thesis in 2027.
-            </p>
           </article>
 
           <!-- Schotrix -->
           <article class="project-card" aria-labelledby="proj-schotrix-title">
             <div class="project-card-img-wrap">
-              <img src="assets/images/schotrix.jpg" alt="Schotrix school booking system screenshot" class="project-img">
+              <img src="assets/images/schotrix.jpg" alt="Schotrix school booking application screenshot" class="project-img">
             </div>
             <div class="project-card-body">
+              <span class="project-category">Web Application</span>
               <h3 id="proj-schotrix-title" class="project-title">Schotrix</h3>
-              <p class="project-desc">An online school booking system built with the MERN stack
-                (MongoDB, Express, React, Node.js), offering flexible scheduling for institutions
-                to book and manage appointments.</p>
+              <p class="project-desc">Built a responsive school booking and scheduling application using the MERN stack.</p>
               <ul class="tag-list" aria-label="Technologies">
                 <li class="tag">MongoDB</li>
                 <li class="tag">Express</li>
                 <li class="tag">React</li>
                 <li class="tag">Node.js</li>
               </ul>
-              <a href="https://schotrix.netlify.app/" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
-                Live Site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-              </a>
+              <div class="project-actions">
+                <a href="https://schotrix.netlify.app/" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  View Project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </article>
 
-          <!-- Alfasente -->
-          <article class="project-card" aria-labelledby="proj-alfasente-title">
+          <!-- E-Tourism Uganda -->
+          <article class="project-card" aria-labelledby="proj-etourism-title">
             <div class="project-card-img-wrap">
-              <img src="assets/images/alfasente.jpg" alt="Alfasente fintech product screenshot" class="project-img">
+              <img src="assets/images/e-tourism-uganda.png" alt="E-Tourism Uganda application screenshot" class="project-img">
             </div>
             <div class="project-card-body">
-              <h3 id="proj-alfasente-title" class="project-title">Alfasente</h3>
-              <p class="project-desc">A fintech product developed during the Women in Fintech Hackathon
-                Uganda (HiPipo, Mojaloop, Level One Project). The product bridges business and finance
-                to promote financial inclusion.</p>
+              <span class="project-category">Web Project</span>
+              <h3 id="proj-etourism-title" class="project-title">E-Tourism Uganda</h3>
+              <p class="project-desc">Created a responsive tourism website for discovering destinations and travel experiences in Uganda.</p>
+              <div class="project-actions">
+                <a href="https://e-tourism-uganda.netlify.app/" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  View Project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chunked Bump Allocator with Selective Reset -->
+          <article class="project-card" aria-labelledby="proj-allocator-title">
+            <div class="project-card-body">
+              <span class="project-category">Systems Project</span>
+              <h3 id="proj-allocator-title" class="project-title">Chunked Bump Allocator with Selective Reset</h3>
+              <p class="project-desc">Built a Rust memory allocator that supports selective memory reclamation for allocations with different lifetimes.</p>
               <ul class="tag-list" aria-label="Technologies">
-                <li class="tag">Fintech</li>
-                <li class="tag">Hackathon</li>
-                <li class="tag">Financial Inclusion</li>
+                <li class="tag">Rust</li>
+                <li class="tag">Memory Management</li>
+                <li class="tag">RAII</li>
               </ul>
-              <a href="https://alfasente.com/" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
-                Live Site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-              </a>
             </div>
           </article>
 
-          <!-- Mentorship Club — commented out until a specific repository URL is available
-          <article class="project-card" aria-labelledby="proj-mentorship-title">
+          <!-- Context-Switch Adaptive TLB Prefetching -->
+          <article class="project-card" aria-labelledby="proj-tlb-title">
+            <div class="project-card-body">
+              <span class="project-category">Computer Architecture Project</span>
+              <h3 id="proj-tlb-title" class="project-title">Context-Switch Adaptive TLB Prefetching</h3>
+              <p class="project-desc">Co-designed a TLB prefetching approach that preserves process-specific state across context switches.</p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li class="tag">ChampSim</li>
+                <li class="tag">C++</li>
+                <li class="tag">Virtual Memory</li>
+              </ul>
+              <p class="project-collab">
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                Team project with Hyeonseok Oh
+              </p>
+            </div>
+          </article>
+
+          <!-- On-Demand PKRU Updates -->
+          <article class="project-card" aria-labelledby="proj-pkru-title">
+            <div class="project-card-body">
+              <span class="project-category">Security Design Project</span>
+              <h3 id="proj-pkru-title" class="project-title">On-Demand PKRU Updates</h3>
+              <p class="project-desc">Co-designed a domain-management approach for using Intel Memory Protection Keys more efficiently.</p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li class="tag">Intel MPK</li>
+                <li class="tag">PKRU</li>
+                <li class="tag">Memory Isolation</li>
+              </ul>
+              <p class="project-collab">
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                Team project with Hyeonseok Oh
+              </p>
+            </div>
+          </article>
+
+          <!-- Angella's Shop -->
+          <article class="project-card" aria-labelledby="proj-angella-title">
             <div class="project-card-img-wrap">
-              <img src="assets/images/mentorship.jpg" alt="Mentorship Club website screenshot" class="project-img">
+              <img src="assets/images/angella-shop.png" alt="e-commerce application screenshot" class="project-img">
             </div>
             <div class="project-card-body">
-              <h3 id="proj-mentorship-title" class="project-title">Mentorship Club</h3>
-              <p class="project-desc">A responsive school club website built with HTML, CSS, and JavaScript.</p>
+              <span class="project-category">Teaching Project</span>
+              <h3 id="proj-angella-title" class="project-title">Angella's Shop</h3>
+              <p class="project-desc">Built a responsive shop interface collaboratively with students while teaching Bootstrap.</p>
               <ul class="tag-list" aria-label="Technologies">
                 <li class="tag">HTML</li>
                 <li class="tag">CSS</li>
-                <li class="tag">JavaScript</li>
+                <li class="tag">Bootstrap</li>
               </ul>
-              <a href="TODO_MENTORSHIP_GITHUB_URL" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
-                View on GitHub <i class="fa-brands fa-github" aria-hidden="true"></i>
-              </a>
+              <p class="project-collab">
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                Built collaboratively with students
+              </p>
+              <div class="project-actions">
+                <a href="https://angella-shop.netlify.app/" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  View Project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </article>
-          -->
 
         </div><!-- /.project-grid -->
 
@@ -218,11 +269,32 @@
           <a href="https://github.com/JOANITA-51" target="_blank" rel="noopener noreferrer" aria-label="JOANITA-51 GitHub profile">
             <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
           </a>
-          and
-          <a href="https://www.figma.com/file/pM0Re0QMSgto8vbD2ou9yi/profile?node-id=49%3A489" target="_blank" rel="noopener noreferrer" aria-label="Figma design portfolio">
-            <i class="fa-brands fa-figma" aria-hidden="true"></i> Figma
-          </a>
         </p>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TECHNICAL WRITING
+    ======================================================== -->
+    <section class="section section-alt" id="writing" aria-labelledby="writing-heading">
+      <div class="container">
+
+        <h2 id="writing-heading" class="section-title">Technical Writing</h2>
+        <p class="section-lead">Articles on security, systems programming, and software development.</p>
+
+        <!-- Article cards are omitted: no verified direct article URLs are currently available.
+             Add individual article cards here once direct URLs are confirmed.
+             Profile links below point to the full article archives. -->
+
+        <div class="writing-profiles">
+          <a href="https://hashnode.com/@Joanita" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-hashnode" aria-hidden="true"></i> View on Hashnode
+          </a>
+          <a href="https://medium.com/@nakityoanita" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-medium" aria-hidden="true"></i> View on Medium
+          </a>
+        </div>
 
       </div>
     </section>
@@ -395,81 +467,22 @@
     <!-- ========================================================
          SKILLS & EDUCATION
     ======================================================== -->
-    <section class="section" id="skills" aria-labelledby="skills-heading">
+    <section class="section" id="skills" aria-labelledby="education-heading">
       <div class="container skills-education-grid">
 
-        <!-- Skills -->
-        <div>
-          <h2 id="skills-heading" class="section-title">Skills</h2>
-
-          <dl class="skill-groups">
-
-            <div class="skill-group">
-              <dt class="skill-group-label">Systems &amp; Security</dt>
-              <dd class="tag-list">
-                <span class="tag">Systems Security</span>
-                <span class="tag">Memory Safety</span>
-                <span class="tag">Secure Software Development</span>
-              </dd>
-            </div>
-
-            <div class="skill-group">
-              <dt class="skill-group-label">Programming</dt>
-              <dd class="tag-list">
-                <span class="tag">Rust</span>
-                <span class="tag">C / C++</span>
-                <span class="tag">Python</span>
-                <span class="tag">JavaScript</span>
-              </dd>
-            </div>
-
-            <div class="skill-group">
-              <dt class="skill-group-label">Systems &amp; Tools</dt>
-              <dd class="tag-list">
-                <span class="tag">Linux</span>
-                <span class="tag">Git</span>
-                <span class="tag">GitHub</span>
-                <span class="tag">Docker</span>
-                <span class="tag">LLVM</span>
-              </dd>
-            </div>
-
-            <div class="skill-group">
-              <dt class="skill-group-label">Web Development</dt>
-              <dd class="tag-list">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">React</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">Express</span>
-                <span class="tag">Firebase</span>
-              </dd>
-            </div>
-
-            <div class="skill-group">
-              <dt class="skill-group-label">Research</dt>
-              <dd class="tag-list">
-                <span class="tag">Prototype Development</span>
-                <span class="tag">Benchmarking</span>
-                <span class="tag">Performance Analysis</span>
-                <span class="tag">Technical Writing</span>
-              </dd>
-            </div>
-
-            <div class="skill-group">
-              <dt class="skill-group-label">Professional</dt>
-              <dd class="tag-list">
-                <span class="tag">Project Management</span>
-                <span class="tag">Documentation</span>
-                <span class="tag">Mentoring</span>
-                <span class="tag">Team Coordination</span>
-              </dd>
-            </div>
-
-          </dl>
+        <!-- Graduation photograph -->
+        <div class="edu-photo-col">
+          <figure class="edu-photo-wrap">
+            <img
+              src="assets/images/graduation-photo.jpg"
+              alt="Joanita Nakityo in graduation attire at Makerere University"
+              class="edu-photo"
+            >
+            <!-- <figcaption class="edu-photo-caption">M.S. in Computer Science, UNIST — 2026.</figcaption> -->
+          </figure>
         </div>
 
-        <!-- Education -->
+        <!-- Education + Core Skills -->
         <div>
           <h2 id="education-heading" class="section-title">Education</h2>
 
@@ -477,7 +490,7 @@
 
             <li class="education-item">
               <div class="education-header">
-                <h3 class="education-degree">M.S. in Computer Science</h3>
+                <h3 class="education-degree">Master of Science in Computer Science and Engineering</h3>
                 <span class="education-period">2024 – 2026</span>
               </div>
               <p class="education-school">Ulsan National Institute of Science and Technology (UNIST)</p>
@@ -486,12 +499,25 @@
 
             <li class="education-item">
               <div class="education-header">
-                <h3 class="education-degree">B.S. in Software Engineering</h3>
+                <h3 class="education-degree">Bachelor of Science in Software Engineering</h3>
+                <span class="education-period">2019 – 2023</span>
               </div>
-              <p class="education-school">Makerere University</p>
+              <p class="education-school">Makerere University (MUK)</p>
             </li>
 
           </ul>
+
+          <div class="edu-core-skills">
+            <p class="edu-core-skills-label">Core Skills</p>
+            <ul class="tag-list" role="list" aria-label="Core skills">
+              <li><span class="tag tag--muted">Systems Security</span></li>
+              <li><span class="tag tag--muted">Rust</span></li>
+              <li><span class="tag tag--muted">C / C++</span></li>
+              <li><span class="tag tag--muted">Linux</span></li>
+              <li><span class="tag tag--muted">Systems Programming</span></li>
+              <li><span class="tag tag--muted">Secure Software Development</span></li>
+            </ul>
+          </div>
         </div>
 
       </div>
